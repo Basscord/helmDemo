@@ -57,15 +57,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        print("AppDelegate: Resume Multipeer Connectivity now.")
-        if mcController?.btnStart.titleLabel?.text == "Stop" {
-            self.blucommMCAdvertiser?.startAdvertisingPeer()
-            self.blucommMCBrowser?.startBrowsingForPeers()
-            
-            self.serviceStarted = true
-        }
-        self.backgroundTask = UIBackgroundTaskInvalid
         
     }
 
