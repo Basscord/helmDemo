@@ -3,7 +3,6 @@
 //  Helm
 //
 //  Created by Jeff Glasse 
-//  Copyright © 2016 Clarence Ji. All rights reserved.
 //
 
 import UIKit

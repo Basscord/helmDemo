@@ -24,7 +24,11 @@ class MCTestViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        self.myMCController.setup()
+        }
+    
+    func setupMCController()
+    {
         let myPeerID = myMCController.myPeerID
         let serviceType = myMCController.kServiceType
         
@@ -36,35 +40,18 @@ class MCTestViewController: UIViewController, UITextFieldDelegate {
         self.myMCController.toggleService()
     }
     
-    
     @IBAction func sendCommand(_ sender: UIButton) {
         let command = sender.titleLabel!.text
         myMCController.sendCommand(text: command!)
-        print(command!)
+        print("sent command: \(command!)")
         
     }
     
-    func appMovedToBackground() {
-        self.isAppInBackground = true
-    }
-    
-    func appMovedToForeground() {
-        self.isAppInBackground = false
-    }
-    
+       
     
     // MARK: - Button Actions
     
     
-    private func logText(text: String) {
-        
-        print(text)
-        DispatchQueue.main.async {
-            let newString = text + "\n" + self.txtViewLog.text
-            self.txtViewLog.text = newString
-        }
-        
-    }
     
     
     
