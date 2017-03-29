@@ -1,9 +1,8 @@
 //
 //  ViewController.swift
-//  BluComm
+//  Helm
 //
-//  Created by Clarence Ji on 7/7/16.
-//  Copyright © 2016 Clarence Ji. All rights reserved.
+//  Created by Jeff Glasse
 //
 
 import UIKit
@@ -13,7 +12,6 @@ class MCTestViewController: UIViewController, UITextFieldDelegate {
 
 
     override var prefersStatusBarHidden: Bool { return true}
-    private var isAppInBackground = false
     
 
     override func viewDidLoad()
@@ -28,9 +26,6 @@ class MCTestViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-       
-    
-    // MARK: - Button Actions
     
     
     
