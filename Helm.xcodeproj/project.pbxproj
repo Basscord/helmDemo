@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		112F74A31D2D16CA004F1242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112F74A11D2D16CA004F1242 /* Main.storyboard */; };
+		8A9CC1B91E8C39F4005C4B2E /* MCController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CC1B81E8C39F4005C4B2E /* MCController.swift */; };
 		E13FE0CB1E8ACFBB00CA54A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E13FE0CA1E8ACFBB00CA54A9 /* Default-568h@2x.png */; };
 		E1456DEB1E8A7C31009BF5BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1456DEA1E8A7C31009BF5BD /* AppDelegate.swift */; };
 		E1456DED1E8A7C42009BF5BD /* MCTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1456DEC1E8A7C42009BF5BD /* MCTestViewController.swift */; };
@@ -37,12 +38,12 @@
 		112F74A21D2D16CA004F1242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		112F74AE1D2D16CA004F1242 /* HelmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		112F74B91D2D16CA004F1242 /* HelmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A9CC1B81E8C39F4005C4B2E /* MCController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCController.swift; path = Helm/MCController.swift; sourceTree = SOURCE_ROOT; };
 		E13FE0CA1E8ACFBB00CA54A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E1456DEA1E8A7C31009BF5BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Helm/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		E1456DEC1E8A7C42009BF5BD /* MCTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCTestViewController.swift; path = Helm/MCTestViewController.swift; sourceTree = SOURCE_ROOT; };
 		E1456DEE1E8A7C6A009BF5BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Helm/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		E1456DF11E8A7CBB009BF5BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Helm/Info.plist; sourceTree = SOURCE_ROOT; };
-		E1456DF31E8AC16D009BF5BD /* Helm.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = Helm.entitlements; path = Helm/Helm.entitlements; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +93,10 @@
 		112F749C1D2D16CA004F1242 /* Helm */ = {
 			isa = PBXGroup;
 			children = (
+				8A9CC1B81E8C39F4005C4B2E /* MCController.swift */,
 				E1456DEA1E8A7C31009BF5BD /* AppDelegate.swift */,
 				E1456DEC1E8A7C42009BF5BD /* MCTestViewController.swift */,
 				112F74A11D2D16CA004F1242 /* Main.storyboard */,
-				E1456DF31E8AC16D009BF5BD /* Helm.entitlements */,
 				E1456DEE1E8A7C6A009BF5BD /* Assets.xcassets */,
 				E1456DF11E8A7CBB009BF5BD /* Info.plist */,
 			);
@@ -171,12 +172,12 @@
 				TargetAttributes = {
 					112F74991D2D16CA004F1242 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = WPGAGSXUST;
+						DevelopmentTeam = WH5QU75L46;
 						DevelopmentTeamName = "Clarence Ji";
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -250,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1456DED1E8A7C42009BF5BD /* MCTestViewController.swift in Sources */,
+				8A9CC1B91E8C39F4005C4B2E /* MCController.swift in Sources */,
 				E1456DEB1E8A7C31009BF5BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,11 +397,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Helm.entitlements;
-				DEVELOPMENT_TEAM = WPGAGSXUST;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WH5QU75L46;
 				INFOPLIST_FILE = Helm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jeffglasse;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brian-mau.zylon-helm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -411,11 +414,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Helm.entitlements;
-				DEVELOPMENT_TEAM = WPGAGSXUST;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WH5QU75L46;
 				INFOPLIST_FILE = Helm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jeffglasse;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brian-mau.zylon-helm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
