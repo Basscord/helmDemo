@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		112F74A31D2D16CA004F1242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112F74A11D2D16CA004F1242 /* Main.storyboard */; };
 		E13FE0CB1E8ACFBB00CA54A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E13FE0CA1E8ACFBB00CA54A9 /* Default-568h@2x.png */; };
-		E13FE0CD1E8AD43800CA54A9 /* MCController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13FE0CC1E8AD43800CA54A9 /* MCController.swift */; };
 		E1456DEB1E8A7C31009BF5BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1456DEA1E8A7C31009BF5BD /* AppDelegate.swift */; };
 		E1456DED1E8A7C42009BF5BD /* MCTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1456DEC1E8A7C42009BF5BD /* MCTestViewController.swift */; };
 		E1456DEF1E8A7C6A009BF5BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1456DEE1E8A7C6A009BF5BD /* Assets.xcassets */; };
@@ -39,7 +38,6 @@
 		112F74AE1D2D16CA004F1242 /* HelmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		112F74B91D2D16CA004F1242 /* HelmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13FE0CA1E8ACFBB00CA54A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E13FE0CC1E8AD43800CA54A9 /* MCController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCController.swift; path = Helm/MCController.swift; sourceTree = SOURCE_ROOT; };
 		E1456DEA1E8A7C31009BF5BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Helm/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		E1456DEC1E8A7C42009BF5BD /* MCTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCTestViewController.swift; path = Helm/MCTestViewController.swift; sourceTree = SOURCE_ROOT; };
 		E1456DEE1E8A7C6A009BF5BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Helm/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -96,7 +94,6 @@
 			children = (
 				E1456DEA1E8A7C31009BF5BD /* AppDelegate.swift */,
 				E1456DEC1E8A7C42009BF5BD /* MCTestViewController.swift */,
-				E13FE0CC1E8AD43800CA54A9 /* MCController.swift */,
 				112F74A11D2D16CA004F1242 /* Main.storyboard */,
 				E1456DF31E8AC16D009BF5BD /* Helm.entitlements */,
 				E1456DEE1E8A7C6A009BF5BD /* Assets.xcassets */,
@@ -253,7 +250,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1456DED1E8A7C42009BF5BD /* MCTestViewController.swift in Sources */,
-				E13FE0CD1E8AD43800CA54A9 /* MCController.swift in Sources */,
 				E1456DEB1E8A7C31009BF5BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
